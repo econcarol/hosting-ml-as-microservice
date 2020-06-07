@@ -13,7 +13,7 @@ My Windows 10 Home build version does not meet Docker Desktop requirements, so I
 (7) Windows PowerShell: hit Ctrl + C to stop image
 
 
-Q2: How to push container to Docker Hub?
+Q2: How to push image to Docker Hub?
 
 (1) Windows PowerShell: docker login
 (2) docker tag [image ID] [your docker username]/[name of your repository]
