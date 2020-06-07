@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      div { width: 200px; padding-bottom: 20px; }
+      textarea { width: 400px; height: 200px; }
+      button { width: 100px; height: 25px; display: block; }
+    </style>
+
+    <script>
+    var sentiment = function() {
+      var key = "review";
+      var obj = {};
+      var review = document.getElementById("review").value;
+      obj[name] = review;
+
+      var xhttp = new XMLHttpRequest();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("output").innerHTML = xhttp.responseText;
+        }
+      };
+      
+      xhttp.open("POST", "http://127.0.0.1:5000/", true);
+      xhttp.setRequestHeader('Content-Type', 'application/json');
+      xhttp.send(JSON.stringify({review: obj[name]}));
+    }
+    </script>
+  </head>
+
+  <body>	
+  <div><b>Enter your review:</b></div>
+    <form onsubmit="return false">
+      <textarea id="review"></textarea>
+      <button onclick="sentiment();"><b>Analyze it!</b></button>
+    </form>
+  <b>The sentiment of your review is:</b> 
+  <span id="output" style="color:blue; font-weight:bold"></span>
+  </body>
+</html>
