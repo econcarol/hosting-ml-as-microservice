@@ -16,6 +16,6 @@ My Windows 10 Home build version does not meet Docker Desktop requirements, so I
 Q2: How to push image to Docker Hub?
 
 (1) Windows PowerShell: docker login
-(2) docker tag [image ID] [your docker username]/[name of your repository]
-(3) docker push [your docker username]/[name of your repository]
+(2) Windows PowerShell: docker tag [image ID] [your docker username]/[name of your repository]
+(3) Windows PowerShell: docker push [your docker username]/[name of your repository]
 (4) go to Docker Hub and you should see the image there
