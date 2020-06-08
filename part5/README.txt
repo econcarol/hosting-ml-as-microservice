@@ -10,7 +10,6 @@ How to make API call to our simple model and analyze a review?
 
 
 To make the site available on the web, we can create a container and host it on GCP or AWS. 
-
 - The docker folder has all the files needed to create the container
 - Follow the instructions in Part 4 to create the docker image
 - Follow the instructions on GCP or AWS to host the container online and get the public IP
