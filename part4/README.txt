@@ -1,3 +1,5 @@
+This container is publicly avaiable on Docker Hub: econcarol/my_1st_project.
+
 Q1: How to build docker image in Windows using Docker Toolbox?
 
 My Windows 10 Home build version does not meet Docker Desktop requirements, so I use Docker Toolbox instead. 
