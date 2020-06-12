@@ -17,4 +17,4 @@ To make the site available on the web, we can create a container and host it on 
 - Use GCP or AWS file hosting services to host sentiment.html 
 - Open the file URL and change https:// to http://
 
-This simple app is available on my website: http://carolcui.com/myapps/review-sentiment.html
+This simple app is available on my website: http://carolcui.com/myapps/review-sentiment/review-sentiment.html
